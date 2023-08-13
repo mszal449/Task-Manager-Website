@@ -1,0 +1,31 @@
+
+
+.task-form {
+    background-color: beige;
+    text-align: center;
+    width: 80%;
+}
+
+.task-input {
+    flex: 1;
+}
+
+
+
+
+.task-control {
+    display: flex;
+    vertical-align: center;
+}
+
+
+
+/* BUTTONS */
+.submit-btn {
+    cursor: pointer;
+
+}
+
+.submit-btn:hover {
+    background-color: brown;
+}
