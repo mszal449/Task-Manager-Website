@@ -1,31 +1,84 @@
+/* TODO : FONT */
+html {
+    font-family: sans-serif;
+}
 
-
+.title {
+    font-size: 30px;
+    font-weight: 400;
+}
 .task-form {
-    background-color: beige;
+    background-color: #FAF0D7;
     text-align: center;
+    margin: auto;
     width: 80%;
+    padding: 20px;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.task-control {
+    text-align: center;
 }
 
 .task-input {
-    flex: 1;
+    display: block;
+    height: 30px;
+    width: 80%;
+    margin: 10px auto; /* Center the input horizontally and add vertical margin */
+    padding: 5px 10px; /* Adjust padding to match button */
+    outline: none;
+    border: 1px #636363 solid;
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding and border in the element's total height */
+    transition: all 0.3s ease;
 }
 
-
-
-
-.task-control {
-    display: flex;
-    vertical-align: center;
+.task-input:focus {
+    box-shadow: 0 0 1px #3d3d3d;
 }
-
-
 
 /* BUTTONS */
-.submit-btn {
-    cursor: pointer;
 
+button {
+    border: 1px #636363 solid;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn {
+    border-left: none;
+    border-radius: 5px;
+    padding: 5px 10px; /* Adjust padding to match input */
+    color: white;
+    background-color: #8CC0DE;
+    border-color: #8CC0DE;
+    height: 30px;
 }
 
 .submit-btn:hover {
-    background-color: brown;
+    background-color:#c45ecc;
+    border-color: #c45ecc;
+
+}
+
+@media (min-width: 500px) {
+    .task-control {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .task-input {
+        flex: 1;
+        margin: 0 0 0 10px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .submit-btn {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
 }
