@@ -13,24 +13,28 @@ This is a simple web application for managing tasks. It provides a user interfac
 ## Getting Started
 
 1. Clone this repository:
-
-   ```bash
+   ```
+   bash
    cd task-management-app
+   ```
    
 2. Install dependencies for both the frontend and backend:
-
-   ```cd <Task Manager Website location>
+   ```
+   cd <Task Manager Website location>
    npm install
-
+   ```
 4. Configure your MongoDB connection by creating a .env file in the backend directory and setting the MONGO_URI variable:
-  MONGO_URI=your_mongodb_uri
-
-5. Start the development server:
+   ```
+   MONGO_URI=your_mongodb_uri
+   ```
+6. Start the development server:
+   ```
    npm start
-
-6. Go to local host address in your website by using (default port: 3000):
-  ```http://localhost:<PORT>/
-
+   ```
+8. Go to local host address in your website by using (default port: 3000):
+   ```
+   http://localhost:<PORT>/
+   ```
 
 # Backend API Endpoints:
 GET /api/v1/tasks: Get all tasks.
