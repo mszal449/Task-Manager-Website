@@ -1,3 +1,4 @@
+// mongoose data model
 const { kMaxLength } = require('buffer')
 const mongoose = require('mongoose')
 const TaskSchema = new mongoose.Schema({
@@ -13,4 +14,5 @@ const TaskSchema = new mongoose.Schema({
     }
 })
 
+// export model
 module.exports = mongoose.model('Task', TaskSchema)

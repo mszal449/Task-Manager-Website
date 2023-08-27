@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Manager</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
 </head>
 <body>
-    <div class="task-form">
+    <!-- new task form -->
+    <form class="task-form">
         <div class="title">Task Manager</div>
         <div class="task-control">
             <input 
@@ -15,10 +17,23 @@
             name="name"
             class="task-input"
             placeholder="do the laundry">
-            <button class="submit-btn">Submit</button>
+            <button type="submit" class="btn submit-btn">submit</button>
+        </div>
+        <div class="form-alert"></div>
+    </form>
+    <!-- all tasks -->
+    <div class="tasks-container">
+        <p class="loading-text">Loading...</p>
+        <div class="tasks">
         </div>
     </div>
-    <div class="task-container">
-    </div>
+    <!-- Axios-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha256-/UzhKodZQoGvzunHOkD+eswoK8yedk+7OvoUgalqCR4="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <!-- Js -->
+    <script src="./browser-app.js"></script>
 </body>
 </html>

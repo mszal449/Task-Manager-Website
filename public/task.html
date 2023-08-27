@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Task</title>
+  <!-- Style links -->
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="tasks.css">
+</head>
+<body>
+  <div class="main-container">
+    <!-- form -->
+    <form class="single-task-form">
+      <h3 style="text-align: center;">Edit Task</h3>
+      <!-- task id text -->
+      <div class="form-control">
+        <label style="font-weight:600;">Task id</label>
+        <p class="task-edit-id"></p>
+      </div>
+      <!-- name input -->
+      <div class="form-control-name">
+        <label class="task-name" for="name">Name</label>
+        <input type="text" class="task-edit-name">
+      </div>
+      <!-- completed input -->
+      <div class="form-control-completed">
+        <label for="completed">Completed</label>
+        <input type="checkbox" name="completed" class="task-edit-completed">
+      </div>
+      <!-- buttons control -->
+      <div class="buttons-control">
+        <button class="edit-btn" type="submit">edit</button>
+        <button class="back-link">back</button>
+      </div>
+      <div class="form-alert"></div>
+    </form>
+  </div>
+    <!-- Axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha256-/UzhKodZQoGvzunHOkD+eswoK8yedk+7OvoUgalqCR4="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <!-- Js -->
+  <script src="./task-edit.js"></script>
+</body>
+</html>

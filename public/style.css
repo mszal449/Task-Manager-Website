@@ -1,18 +1,16 @@
-/* TODO : FONT */
-html {
-    font-family: sans-serif;
-}
-
+/* FORM */
 .title {
     font-size: 30px;
     font-weight: 400;
 }
+
 .task-form {
-    background-color: #FAF0D7;
     text-align: center;
-    margin: auto;
-    width: 80%;
-    padding: 20px;
+    background-color: #ffeebd;
+    margin: 0 auto;
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 0;
     border-radius: 5px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
@@ -26,12 +24,12 @@ html {
     display: block;
     height: 30px;
     width: 80%;
-    margin: 10px auto; /* Center the input horizontally and add vertical margin */
-    padding: 5px 10px; /* Adjust padding to match button */
+    margin: 10px auto; 
+    padding: 5px 10px; 
     outline: none;
     border: 1px #636363 solid;
     border-radius: 5px;
-    box-sizing: border-box; /* Include padding and border in the element's total height */
+    box-sizing: border-box; 
     transition: all 0.3s ease;
 }
 
@@ -48,20 +46,20 @@ button {
 }
 
 .submit-btn {
-    border-left: none;
-    border-radius: 5px;
-    padding: 5px 10px; /* Adjust padding to match input */
     color: white;
     background-color: #8CC0DE;
-    border-color: #8CC0DE;
+    border-color: #848484;
+    border-left: none;
+    border-radius: 5px;
+    padding: 5px 10px;
     height: 30px;
 }
 
 .submit-btn:hover {
     background-color:#c45ecc;
-    border-color: #c45ecc;
-
 }
+
+/* VARIABLE INPUT LAYOUT */
 
 @media (min-width: 500px) {
     .task-control {
@@ -82,3 +80,91 @@ button {
         border-bottom-left-radius: 0;
     }
 }
+
+
+
+
+/* TASK */
+
+.loading-task {
+    text-align: center;
+}
+
+.tasks {
+    background-color: #fff4d4;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 0;
+    padding-top: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.single-task {
+    vertical-align: center;
+    align-items: center;
+    display: flex;
+} 
+
+.name-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.task-name {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.task-completed .task-name {
+    color: green;
+    text-decoration: line-through;
+}
+
+.task-id {
+    color: #848484;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.task-links {
+    display: inline-flex;
+    align-items: center;
+}
+
+.edit-link {
+    color: white;
+    background-color: #8CC0DE;
+    border: 1px solid #848484 ;
+    padding:4px 10px 5px 10px; 
+    margin-right: 0;
+    border-right: none;
+    text-decoration: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: inline-block; 
+    transition: background-color 150ms;
+}
+
+.edit-link:hover {
+    background-color: #c45ecc;
+}
+
+.delete-btn {
+    color: white;
+    background-color: #8CC0DE;
+    outline: none;
+    border: 1px solid #848484;
+    margin-left: 0;
+    padding: 6px 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: background-color 150ms;
+}
+
+.delete-btn:hover {
+    background-color: #c45ecc;
+}
+
