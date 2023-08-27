@@ -18,8 +18,8 @@ This is a simple web application for managing tasks. It provides a user interfac
 
    cd task-management-app
 2. Install dependencies for both the frontend and backend:
-  cd <Task Manager Website location>
-  npm install
+   ```cd <Task Manager Website location>
+   npm install
 
 3. Configure your MongoDB connection by creating a .env file in the backend directory and setting the MONGO_URI variable:
   MONGO_URI=your_mongodb_uri
