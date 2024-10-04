@@ -37,12 +37,13 @@ This is a simple web application for managing tasks. It provides a user interfac
    ```
 
 # Backend API Endpoints:
+```
 GET /api/v1/tasks: Get all tasks.
 POST /api/v1/tasks: Create a new task.
 GET /api/v1/tasks/:id: Get a single task by ID.
 PUT /api/v1/tasks/:id: Update a task by ID.
 DELETE /api/v1/tasks/:id: Delete a task by ID.
-
+```
 # Frontend
 The frontend uses HTML, CSS, and JavaScript to display tasks, add new tasks, and manage existing tasks.
 
